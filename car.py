@@ -2,7 +2,7 @@ import serial
 
 class Car:
     def __init__(self):
-        self.serial_connection = serial.Serial('/dev/ttyUSB0', 9600)
+        self.serial_connection = serial.Serial('/dev/ttyACM0', 9600)
 
     def move(self, left, right):
         """
